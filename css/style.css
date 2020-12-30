@@ -1,9 +1,7 @@
-
 body {
   background-color: #252424;
   color: #e4e0e0;
 }
-
 
 h1,
 h2,
@@ -20,7 +18,7 @@ a {
 }
 
 a:hover {
-  color: #0078ff;
+  color: #e0d7d7;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -83,7 +81,7 @@ a:hover {
   padding: 0;
   height: 100%;
   width: 100%;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .paralax-mf {
@@ -163,8 +161,8 @@ a:hover {
 }
 
 .title-left:before {
-  content: '';
-  position:absolute;
+  content: "";
+  position: absolute;
   height: 3px;
   background-color: #0078ff;
   width: 100px;
@@ -177,20 +175,10 @@ a:hover {
   padding-left: 2rem;
 }
 
-.box-shadow-full {
-  padding: 3rem 1.25rem;
-  position: relative;
-  margin-bottom: 3rem;
-  background-color: #1a1818;
-  z-index: 2;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-}
-
-
 /* Navbar */
 
 .navbar-b {
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-color: transparent;
   padding-top: 1.563rem;
   padding-bottom: 1.563rem;
@@ -216,7 +204,7 @@ a:hover {
 
 .navbar-b.navbar-trans .nav-link:before,
 .navbar-b.navbar-reduce .nav-link:before {
-  content: '';
+  content: "";
   position: absolute;
   margin-left: 0px;
   width: 0%;
@@ -236,7 +224,6 @@ a:hover {
   margin-left: 15px;
   margin-right: 15px;
   width: 40%;
-  ;
 }
 
 .navbar-b.navbar-trans .show > .nav-link:before,
@@ -268,7 +255,7 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce {
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-color: #252424;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -298,7 +285,7 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
-  background-color: #1B1B1B;
+  background-color: #1b1b1b;
 }
 
 .navbar-b .navbar-brand {
@@ -321,7 +308,7 @@ a:hover {
 }
 
 .navbar-b .dropdown-menu .dropdown-item {
-  padding: .7rem 1.7rem;
+  padding: 0.7rem 1.7rem;
   transition: all 500ms ease;
 }
 
@@ -334,7 +321,6 @@ a:hover {
 .navbar-b .dropdown-menu .dropdown-item.active {
   background-color: #0078ff;
 }
-
 
 /* Intro Cover */
 
@@ -357,14 +343,13 @@ a:hover {
   padding: 0;
   height: 100%;
   width: 100%;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .intro .intro-title {
   color: #fff;
   font-weight: 600;
   font-size: 3rem;
-
 }
 
 .intro .intro-subtitle {
@@ -409,7 +394,6 @@ a:hover {
 
 /* About Me */
 
-
 .row {
   display: flex;
 }
@@ -422,7 +406,6 @@ a:hover {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-
 
 /* Portfolio */
 
@@ -453,7 +436,7 @@ a:hover {
 
 .portfolio-content .w-more {
   color: #4e4e4e;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .w-title {
@@ -464,17 +447,24 @@ a:hover {
   font-size: 1.2rem;
 }
 
-
 /* Contact Section*/
 
 .footer-paralax {
   padding: 4rem 0 0 0;
 }
 
+.contact-mf .box-shadow-full {
+  padding: 3rem 4rem;
+  position: relative;
+  background-color: #1a1818;
+  z-index: 2;
+  margin: 3rem;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
 .contact-mf {
   margin-top: 4rem;
-  margin-left: 25%;
-  
+  margin: 0 auto;
 }
 
 .title-left-contact {
@@ -486,14 +476,104 @@ a:hover {
 footer {
   text-align: center;
   color: #fff;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 footer .copyright {
-  margin-bottom: .3rem;
+  margin-bottom: 0.1rem;
+  width: 50%;
+  margin: 0 auto;
 }
- 
+
 .socials {
-  margin-left: 50%;
+  margin-left: 20%;
   color: white;
+}
+
+/* Back to top button */
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background-color: #1c1e20;
+  color: #8d9094;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 30%;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  box-shadow: 0 0 3px #6381ad;
+}
+
+.back-to-top i {
+  padding-top: 12px;
+}
+
+/* Contact Continued */
+
+.contact-container {
+  max-width: 45rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 20rem;
+}
+.contact-container a.contact-method {
+  color: inherit;
+  display: block;
+  width: 50%;
+  height: 6rem;
+  position: relative;
+  padding-left: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.contact-container a.contact-method h3,
+.contact-container a.contact-method p {
+  font-weight: normal;
+  margin: 0;
+  width: 10rem;
+  transition: all 0.2s ease;
+}
+.contact-container a.contact-method h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  transform: translateY(0.5rem);
+}
+.contact-container a.contact-method p {
+  line-height: 1.25rem;
+  height: 1.25rem;
+  transform: translateY(1rem);
+  opacity: 0;
+  color: #777;
+  font-size: 1rem;
+}
+.contact-container a.contact-method i {
+  font-size: 2rem;
+  line-height: 6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  text-align: center;
+}
+
+.contact-container a.contact-method:hover h3 {
+  transform: translateY(0);
+}
+
+.contact-container a.contact-method:hover p {
+  transform: translateY(0);
+  opacity: 1;
 }
